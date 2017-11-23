@@ -9,6 +9,7 @@ import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.BeforeSpec;
 import com.thoughtworks.gauge.BeforeStep;
 import com.thoughtworks.gauge.BeforeSuite;
+import com.thoughtworks.gauge.ExecutionContext;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
@@ -55,13 +56,15 @@ public class ExecutionHooks {
     }
 
     @BeforeScenario
-    public void BeforeScenario() {
+    public void BeforeScenario(ExecutionContext context) {
         logger.info("In BeforeScenario...");
+        logger.info("About to run {}", context.getCurrentScenario().getName());
     }
 
     @AfterScenario
-    public void AfterScenario() {
+    public void AfterScenario(ExecutionContext context) {
         logger.info("In AfterScenario...");
+        logger.info("Completed running {}", context.getCurrentScenario().getName());
     }
 
     @BeforeStep

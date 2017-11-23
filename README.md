@@ -48,7 +48,7 @@ Built a simple example covering:
    * **todo**: using data loaded from spreadsheets
    * **todo**: using data in hard coded table stepdef format
 * test execution events - global start/stop, test start/stop, etc.
-   * see ```com.example.ExecutionHooks``` - can do before/after suite/spec/scenario/step
+   * see ```com.example.ExecutionHooks``` - can do before/after suite/spec/scenario/step, and get access to the current spec/scenario/step
    * can set ```gauge_clear_state_level``` to ```suite```, ```spec``` or ```scenario``` - sets the scope of each step definition/execution hook instance
       (i.e. created per test scenario, test spec, or test suite)
    * no DI integration, but can use built in datastores per scenario/spec/suite (works on serial but not parallel)
@@ -87,6 +87,7 @@ To run gauge tests in serial (also runs junit tests and any other QA phases...):
 Note: can set properties by name in maven plugin configuration, or at the command line: *-D&lt;property&gt;=&lt;value&gt;*
 * Use **tags** = *"..expression.."* to run feature specs/scenarios that match the expression, 
   which can be tag names with or (**|**)/and (**&**)/not (**!**)
+* _couldn't find a documented way to run a single test scenario via mvn plugin, so raised [feature request](https://github.com/getgauge/gauge-maven-plugin/issues/27)_
 * Use **env** = *&lt;name&gt;* to choose which configuration settings (under ```env```) to use
 
 To run tests in *n* parallel streams (where *n* is optional max, actually executes one process/thread per spec not scenario):

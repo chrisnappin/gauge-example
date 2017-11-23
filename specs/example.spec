@@ -7,8 +7,8 @@ Tags: globalTag
 
 * Open the "Gauge" homepage
 
-Get Started 1
--------------
+Example Test Scenario 1
+-----------------------
 
 This is a test scenario comment.
 
@@ -18,8 +18,8 @@ Tags: odd
 * Ensure installation instructions are available
 * Another parameterised step def "42" "true"
 
-Get Started 2
--------------
+Example Test Scenario 2
+-----------------------
 
 Tags: even
 

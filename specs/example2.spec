@@ -1,4 +1,4 @@
-Example Feature Specification 1
+Example Feature Specification 2
 ===============================
 
 This is another feature specification.
@@ -7,16 +7,16 @@ Tags: globalTag
 
 * Open the "Gauge" homepage
 
-Get Started 3
--------------
+Example Test Scenario 3
+-----------------------
 
 Tags: odd
 
 * Go to Gauge Get Started Page
 * Ensure installation instructions are available
 
-Get Started 4
--------------
+Example Test Scenario 4
+-----------------------
 
 Tags: even
 
