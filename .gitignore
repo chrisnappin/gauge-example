@@ -1,0 +1,9 @@
+.gauge
+.idea
+gauge_bin
+gradle
+logs
+reports
+gauge-example.iml
+gradlew
+gradlew.bat
