@@ -16,7 +16,7 @@ Tags: odd
 
 * Go to Gauge Get Started Page
 * Ensure installation instructions are available
-* Another parameterised step def "42" "true"
+* A high level step "42" and "true"
 
 Example Test Scenario 2
 -----------------------

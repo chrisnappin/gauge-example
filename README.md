@@ -43,8 +43,12 @@ Built a simple example covering:
    * Note the Gauge Intellij plugin performs syntax checking (highlighting errors) in .spec/.md files and also with Java step defs (params etc)
    * step def parameters are always in double quotes (or &lt; &gt; for data sources)
    * Java step def parameters are type converted at runtime
+   * Can have step def aliases (different phrases mapping to same java method)
    * Comments are included in the resulting report
-   * **todo**: high level steps calling low level steps
+   * high level steps calling low level steps
+      * see example.spec - high level step (passing params)
+      * see concept1.cpt - low level steps (using params)
+      * generated report shows both (expand to see low level steps) with param values
    * **todo**: using data loaded from spreadsheets
    * **todo**: using data in hard coded table stepdef format
 * test execution events - global start/stop, test start/stop, etc.
