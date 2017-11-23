@@ -54,7 +54,10 @@ Built a simple example covering:
       * multi-line text is loaded as a string
       * generated report uses a link to the actual file
    * **todo**: using data loaded from spreadsheets
-   * **todo**: using data in hard coded table stepdef format
+   * using data in hard coded table in .spec file
+      * see example.spec and usersTableStep method in StepImplementation
+      * step def is called once with table of values, not once per row
+      * generated report embeds data as HTML table of values
 * test execution events - global start/stop, test start/stop, etc.
    * see ```com.example.ExecutionHooks``` - can do before/after suite/spec/scenario/step, and get access to the current spec/scenario/step
    * can set ```gauge_clear_state_level``` to ```suite```, ```spec``` or ```scenario``` - sets the scope of each step definition/execution hook instance

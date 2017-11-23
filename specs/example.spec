@@ -25,3 +25,10 @@ Tags: even
 
 * Go to Gauge Get Started Page
 * Ensure installation instructions are available
+* Test the following users
+    | username | id |
+    |----------|----|
+    | fred     | 10 |
+    | bert     | 20 |
+
+

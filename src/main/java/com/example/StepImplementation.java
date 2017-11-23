@@ -2,6 +2,8 @@ package com.example;
 
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
+import com.thoughtworks.gauge.Table;
+import com.thoughtworks.gauge.TableRow;
 import com.thoughtworks.gauge.datastore.DataStoreFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -60,6 +62,17 @@ public class StepImplementation {
     public void checkText(String text) {
         logger.info("In checkText, text is {}", text);
         // could assert the value of text here...
+    }
+
+    @Step("Test the following users <users>")
+    public void usersTableStep(Table users) {
+        logger.info("In usersTableStep...");
+
+        for (TableRow row : users.getTableRows()) {
+            for (String column : users.getColumnNames()) {
+                logger.info("{} => {}", column, row.getCell(column));
+            }
+        }
     }
 
     private WebDriver getWebDriver() {
