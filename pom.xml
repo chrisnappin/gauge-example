@@ -83,9 +83,7 @@
                         <!-- use a phase other than test as the test framework is under "main", so we can
                              leave the "test" phase to run the junit tests for the test framework code -->
                         <phase>integration-test</phase>
-                        <configuration>
-                            <specsDir>specs</specsDir>
-                        </configuration>
+                        <!-- don't define specsDir in configuration, so it can be overridden at the command line -->
                         <goals>
                             <goal>execute</goal>
                         </goals>

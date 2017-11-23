@@ -101,7 +101,9 @@ To run gauge tests in serial (also runs junit tests and any other QA phases...):
 Note: can set properties by name in maven plugin configuration, or at the command line: *-D&lt;property&gt;=&lt;value&gt;*
 * Use **tags** = *"..expression.."* to run feature specs/scenarios that match the expression, 
   which can be tag names with or (**|**)/and (**&**)/not (**!**)
-* _couldn't find a documented way to run a single test scenario via mvn plugin, so raised [feature request](https://github.com/getgauge/gauge-maven-plugin/issues/27)_
+* Use **specsDir** = 
+   * *&lt;file&gt;* to run a specific feature spec e.g. ```-DspecsDir=specs/example.spec```, or 
+   * *&lt;file&gt;:line* to run a specific scenario (*line* is line number of the title of the scenario) e.g. ```-DspecsDir=specs/example2.spec:10```
 * Use **env** = *&lt;name&gt;* to choose which configuration settings (under ```env```) to use
 
 To run tests in *n* parallel streams (where *n* is optional max, actually executes one process/thread per spec not scenario):
