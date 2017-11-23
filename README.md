@@ -49,6 +49,10 @@ Built a simple example covering:
       * see example.spec - high level step (passing params)
       * see concept1.cpt - low level steps (using params)
       * generated report shows both (expand to see low level steps) with param values
+   * plain text data loaded from files
+      * see example2.spec, data/flat-text-file.txt and checkText method in StepImplementation
+      * multi-line text is loaded as a string
+      * generated report uses a link to the actual file
    * **todo**: using data loaded from spreadsheets
    * **todo**: using data in hard coded table stepdef format
 * test execution events - global start/stop, test start/stop, etc.

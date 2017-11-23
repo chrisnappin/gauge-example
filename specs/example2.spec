@@ -22,3 +22,4 @@ Tags: even
 
 * Go to Gauge Get Started Page
 * Ensure installation instructions are available
+* Check text from file <file:data/flat-text-file.txt>

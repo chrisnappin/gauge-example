@@ -56,6 +56,12 @@ public class StepImplementation {
         assertEquals("wrong value", true, flag);
     }
 
+    @Step("Check text from file <text>")
+    public void checkText(String text) {
+        logger.info("In checkText, text is {}", text);
+        // could assert the value of text here...
+    }
+
     private WebDriver getWebDriver() {
         return (WebDriver) DataStoreFactory.getSpecDataStore().get("webdriver");
     }
