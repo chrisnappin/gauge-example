@@ -1,9 +1,10 @@
-.gauge
-.idea
-gauge_bin
-gradle
-logs
-reports
+.gauge/
+.idea/
+gauge_bin/
+gradle/
+logs/
+reports/
+target/
 gauge-example.iml
 gradlew
 gradlew.bat
