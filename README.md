@@ -53,9 +53,12 @@ Built a simple example covering:
       * see example2.spec, data/flat-text-file.txt and checkText method in StepImplementation
       * multi-line text is loaded as a string
       * generated report uses a link to the actual file
-   * **todo**: using data loaded from spreadsheets
-   * using data in hard coded table in .spec file
+   * data loaded from .csv format spreadsheets
       * see example.spec and usersTableStep method in StepImplementation
+      * step def is called once with table of values, not once per row
+      * generated report uses a link to the actual file
+   * using data in hard coded table in .spec file
+      * see example.spec and usersTableStep method in StepImplementation (same method as .csv table above)
       * step def is called once with table of values, not once per row
       * generated report embeds data as HTML table of values
 * test execution events - global start/stop, test start/stop, etc.
